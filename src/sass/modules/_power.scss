@@ -1,0 +1,29 @@
+.power{
+    background: #E7F066;
+    &__logo{
+        position: absolute;
+        top: 26px;
+        left: 26px;
+    }
+    &__bg{
+        width: 70%;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__take{
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        height: 112px;
+    }
+    &__container{
+        display: flex;
+    }
+    &__info{
+        padding: 26px 40px 0 0;
+    }
+}

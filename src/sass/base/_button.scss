@@ -1,0 +1,29 @@
+@import './variable';
+
+.button{
+    background: none;
+    border: none;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    padding-bottom: 5px;
+    position: relative;
+    &::before{
+        width: 0%;
+        height: 1px;
+        position: absolute;
+        transition: 0.3s all;
+        background: $light-grey;
+        bottom: 0;
+        left: 0;
+    }
+    &:hover, &:focus{
+        outline: none;
+        &::before{
+            width: 100%;
+        }
+    }
+}
