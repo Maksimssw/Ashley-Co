@@ -1,3 +1,3 @@
-document.addEventListener('click', function(){
-    
+document.addEventListener('DOMContentLoaded', function(){
+  AOS.init();
 });

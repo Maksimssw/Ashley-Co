@@ -1,6 +1,6 @@
 @import './variable';
 
-.button{
+.btn{
     background: none;
     border: none;
     letter-spacing: 1.2px;
@@ -9,14 +9,17 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 19px;
+    cursor: pointer;
     padding-bottom: 5px;
+    width: fit-content;
     position: relative;
     &::before{
+        content: '';
         width: 0%;
         height: 1px;
         position: absolute;
         transition: 0.3s all;
-        background: $light-grey;
+        background: $dark;
         bottom: 0;
         left: 0;
     }
@@ -24,6 +27,12 @@
         outline: none;
         &::before{
             width: 100%;
+        }
+    }
+    &_white{
+        color: $white;
+        &::before{
+            background: $white;
         }
     }
 }

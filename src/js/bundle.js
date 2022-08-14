@@ -3,8 +3,8 @@ var __webpack_exports__ = {};
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
-document.addEventListener('click', function(){
-    
+document.addEventListener('DOMContentLoaded', function(){
+  AOS.init();
 });
 /******/ })()
 ;

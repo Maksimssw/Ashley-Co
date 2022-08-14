@@ -1,0 +1,30 @@
+.cream{
+    &__surface{
+        position: relative;
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &-btn{
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+    }
+    &__container{
+        display: flex;
+    }
+}
+
+@media screen and(max-width: 662px) {
+    .cream{
+        &__surface{
+            &-btn{
+                font-size: 10px;
+                bottom: 10px;
+                left: 10px;
+            }
+        }
+    }
+}

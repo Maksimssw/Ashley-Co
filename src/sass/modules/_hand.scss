@@ -1,0 +1,78 @@
+.hand{
+    background: #9C8554;
+    &_pink{
+        background:#A26779;
+    }
+    &_dark-grey{
+        background: #504B4D;
+    }
+    &_red{
+        background: #B04836;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__text{
+        padding: 40px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__flicker{
+        margin-bottom: 21px;
+    }
+    &__share{
+        width: 100%;
+        &-ph{
+            width: 100%;
+            height: auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-text{
+            height: 112px;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            justify-content: end;
+        }
+    }
+}
+
+@media screen and(max-width: 1000px) {
+    .hand{
+        &__text{
+            width: 40%;
+        }
+    }
+}
+
+@media screen and(max-width: 662px) {
+    .hand{
+        &__text{
+            padding: 20px;
+        }
+        &__btn{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .hand{
+        &__wrapper{
+            display: block;
+        }
+        &__text{
+            width: 100%;
+        }
+        &__share{
+            &-text{
+                height: 50px;
+            }
+        }
+    }
+}

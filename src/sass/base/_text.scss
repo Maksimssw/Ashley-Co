@@ -18,3 +18,19 @@
         line-height: 32px;
     }
 }
+
+@media screen and(max-width: 1000px) {
+    .text{
+        &_content{
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 724px) {
+    .text{
+        font-size: 14px;
+        
+    }
+}

@@ -1,5 +1,8 @@
+@import '../base/variable';
+
 .power{
     background: #E7F066;
+    position: relative;
     &__logo{
         position: absolute;
         top: 26px;
@@ -22,8 +25,158 @@
     }
     &__container{
         display: flex;
-    }
+    }   
     &__info{
-        padding: 26px 40px 0 0;
+        width: 30%;
+    }
+    &__let{
+        padding: 0 45px 0 40px;
+        &-text{
+            margin-bottom: 21px;
+        }
+    }
+    &__uses{
+        background: #1B1B1B;
+        padding: 47px 53px 47px 47px;
+        width: 376px;
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        &-text{
+            margin-bottom: 2px;
+        }
+        &-btn{
+            color: $white;
+            width: 87px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 1000px) {
+    .power{
+        &__uses{
+            padding: 30px;
+            width: 337px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 865px) {
+    .power{
+        &__let{
+            padding: 0 20px;
+            &-text{
+                margin-bottom: 10px;
+            }
+        }
+        &__uses{
+            right: 16px;
+            bottom: 16px;
+        }
+        &__bg{
+            width: 60%;
+        }
+        &__info{
+            width: 40%;
+        }
+        &__take{
+            height: 146px;
+        }
+    }
+}
+
+@media screen and(max-width: 724px) {
+    .power{
+        &__take{
+            padding-left: 10px;
+        }
+        &__uses{
+            padding: 15px;
+            width: 274px;
+            &-text{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 662px) {
+    .power{
+        &__info{
+            position: absolute;
+            width: 55%;
+            top: 0;
+            right: 0;
+        }
+        &__bg{
+            width: 100%;
+        }
+        &__let{
+            padding: 0px;
+            &-text{
+                font-size: 18px;
+            }
+        }
+        &__take{
+            height: 90px;
+        }
+        &__uses{
+            bottom: 66px;
+            width: 320px;
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__container{
+            margin-bottom: 60px;
+        }
+        &__logo{
+            width: 60px;
+            height: 30px;
+            top: 10px;
+                left: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 662px) {
+    .power{
+        &__container{
+            margin-bottom: 120px;
+        }
+        &__bg{
+            height: 240px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 405px) {
+    .power{
+        &__btn{
+            color: #b2b2b2;
+            &::before{
+                content: '';
+                width: 0%;
+                height: 1px;
+                position: absolute;
+                transition: 0.3s all;
+                background: #b2b2b2;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__info{
+            width: 65%;
+        }
+        &__take{
+            height: 75px;
+        }
     }
 }
